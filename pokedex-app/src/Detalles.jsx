@@ -9,13 +9,13 @@ const Detalles =()=> {
         const getData = async () => {
     
             try {
-            const response = Pokemons
+            const response = Pokemons();
         
-            setListaPokemons(response)
-             console.log(response)
+            setListaPokemons(response);
+             console.log(response[0].Name);
         
             } catch (error) {
-                 console.log("Hay un error en tu API")   
+                 console.log("Hay un error en tu API");   
                 
             }      
                    
@@ -26,7 +26,8 @@ const Detalles =()=> {
         return(
             <>
             <h1>hola</h1>
-            {/* <div>{response}</div>
+            {/* <div>{response[0].Name}</div> */}
+            {/* 
             <ul>{listaPokemons &&
         listaPokemons.map((item, i) => {
             <li key={i}>{item.Name}</li>

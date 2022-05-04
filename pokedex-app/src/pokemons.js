@@ -1,7 +1,7 @@
 
 const Pokemons = () => {
 
-const arrayPokemons = [
+return ([
     {   
         "Img": "./img/aron.png",
         "Name": "Aron",
@@ -166,7 +166,7 @@ const arrayPokemons = [
             "SPD": "043"
         }
     }
-    ]
+    ])
     console.log(arrayPokemons)
 }
 
