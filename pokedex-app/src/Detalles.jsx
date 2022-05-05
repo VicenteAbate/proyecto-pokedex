@@ -34,11 +34,9 @@ const Detalles = () => {
 
     return (
         <>
-        {/* <h1>{listaPokemons[0].name}</h1> */}
-        <button onClick={handleClick}>mundo</button> 
+    
         <ul>
-            {listaPokemons && listaPokemons.map((item, index) => (<li key={index}>{item.name}</li>))
-            } 
+            {listaPokemons && listaPokemons.map((item, index) => (<li key={index}>{item.Name}</li>))} 
         </ul>
 
         </>
