@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Pokemons from "./pokemons";
+import Pokemons from "./pokemons.js";
 
 const Detalles = () => {
 
