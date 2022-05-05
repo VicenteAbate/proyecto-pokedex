@@ -4,179 +4,179 @@ const Pokemons = () => {
 
     const pokemons = [
         {
-            Name: "Aron",
-            Id: "#304",
-            About: {
-                Weight: "60,0 kg",
-                Height: "0,4 m",
-                Moves: "Sturdy Rock-Head"
+           name: "Aron",
+            id: "#304",
+            about: {
+                weight: "60,0 kg",
+                height: "0,4 m",
+                moves: "Sturdy Rock-Head"
             },
-            INFO: "It eats iron ore- and sometimes railroad tracks - to build up the steel armor that protects its body",
-            BaseStats: {
-                HP: "050",
-                ATK: "070",
-                DEF: "100",
-                SATK: "040",
-                SDEF: "040",
-                SPD: "030"
+            info: "It eats iron ore- and sometimes railroad tracks - to build up the steel armor that protects its body",
+            baseStats: {
+                hp: "050",
+                atk: "070",
+                def: "100",
+                satk: "040",
+                sdef: "040",
+                spd: "030"
             }
         }
         ,
         {
-            Name: "Bulbasaur",
-            Id: "#001",
-            About: {
-                Weight: "6,9 kg",
-                Height: "0,7 m",
-                Moves: "Chiorophyll Overgrow"
+            name: "Bulbasaur",
+            id: "#001",
+            about: {
+                weight: "6,9 kg",
+                height: "0,7 m",
+                moves: "Chiorophyll Overgrow"
             },
 
-            INFO: "There is a plant seed on its back right from the day this pokemon is born. The seed slowly grows larger",
-            BaseStats: {
-                HP: "045",
-                ATK: "049",
-                DEF: "049",
-                SATK: "065",
-                SDEF: "065",
-                SPD: "045"
+            info: "There is a plant seed on its back right from the day this pokemon is born. The seed slowly grows larger",
+            baseStats: {
+                hp: "045",
+                atk: "049",
+                def: "049",
+                satk: "065",
+                sdef: "065",
+                spd: "045"
             }
         }
         ,
         {
-            Name: "Butterfree",
-            Id: "#012",
-            About: {
-                Weight: "32,0 kg",
-                Height: "1,1 m",
-                Moves: "Compound-Eyes-Tinted-Lens"
+            name: "Butterfree",
+            id: "#012",
+            about: {
+                weight: "32,0 kg",
+                height: "1,1 m",
+                moves: "Compound-Eyes-Tinted-Lens"
             },
-            INFO: "In battle, it flaps its wings at great speed to release highly toxic dust into the air",
-            BaseStats: {
-                HP: "060",
-                ATK: "045",
-                DEF: "050",
-                SATK: "090",
-                SDEF: "080",
-                SPD: "070"
+            info: "In battle, it flaps its wings at great speed to release highly toxic dust into the air",
+            baseStats: {
+                hp: "060",
+                atk: "045",
+                def: "050",
+                satk: "090",
+                sdef: "080",
+                spd: "070"
             }
         }
         ,
         {
-            Name: "Charmander",
-            Id: "#004",
-            About: {
-                Weight: "8,5 kg",
-                Height: "0,6 m",
-                Moves: "Mega-Punch-Fire-Punch"
+            name: "Charmander",
+            id: "#004",
+            about: {
+                weight: "8,5 kg",
+                height: "0,6 m",
+                moves: "Mega-Punch-Fire-Punch"
             },
-            INFO: "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail",
-            BaseStats: {
-                HP: "039",
-                ATK: "052",
-                DEF: "043",
-                SATK: "060",
-                SDEF: "050",
-                SPD: "065"
+            info: "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail",
+            baseStats: {
+                hp: "039",
+                atk: "052",
+                def: "043",
+                satk: "060",
+                sdef: "050",
+                spd: "065"
             }
         }
         ,
         {
-            Name: "Ditto",
-            Id: "#132",
-            About: {
-                Weight: "4,0 kg",
-                Height: "0,3 m",
-                Moves: "Limber Imposter"
-            },
-
-            INFO: "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes",
-            BaseStats: {
-                HP: "048",
-                ATK: "048",
-                DEF: "048",
-                SATK: "048",
-                SDEF: "048",
-                SPD: "048"
-            }
-        }
-
-        ,
-        {
-            Name: "Gastly",
-            Id: "#092",
-            About: {
-                Weight: "0,1 kg",
-                Height: "1,3 m",
-                Moves: "Levitate"
+            name: "Ditto",
+            id: "#132",
+            about: {
+                weight: "4,0 kg",
+                height: "0,3 m",
+                moves: "Limber Imposter"
             },
 
-            INFO: "Born from gases, anyone would falint if engulfed by its gaseous body, which contains poison",
-            BaseStats: {
-                HP: "030",
-                ATK: "035",
-                DEF: "030",
-                SATK: "100",
-                SDEF: "035",
-                SPD: "080"
-            }
-        }
-        ,
-        {
-            Name: "Mew",
-            Id: "#152",
-            About: {
-                Weight: "4,0 kg",
-                Height: "0,4 m",
-                Moves: "Synchronize"
-            },
-            INFO: "When viewed throught a microscope, this pokemons short, fine, delicate hair can be seen",
-            BaseStats: {
-                HP: "100",
-                ATK: "100",
-                DEF: "100",
-                SATK: "100",
-                SDEF: "100",
-                SPD: "100"
+            info: "It can reconstitute its entire cellular structure to change into what it sees, but it returns to normal when it relaxes",
+            baseStats: {
+                hp: "048",
+                atk: "048",
+                def: "048",
+                satk: "048",
+                sdef: "048",
+                spd: "048"
             }
         }
 
         ,
         {
-            Name: "Pikachu",
-            Id: "#025",
-            About: {
-                Weight: "6,0 kg",
-                Height: "0,4 m",
-                Moves: "Mega-Punch-Pay-Day"
+            name: "Gastly",
+            id: "#092",
+            about: {
+                weight: "0,1 kg",
+                height: "1,3 m",
+                moves: "Levitate"
             },
-            INFO: "Pikachu that can generate powerful electricity have a cheek sacs that are extra soft and super stretchy",
-            BaseStats: {
-                HP: "035",
-                ATK: "055",
-                DEF: "040",
-                SATK: "050",
-                SDEF: "050",
-                SPD: "090"
+
+            info: "Born from gases, anyone would falint if engulfed by its gaseous body, which contains poison",
+            baseStats: {
+                hp: "030",
+                atk: "035",
+                def: "030",
+                satk: "100",
+                sdef: "035",
+                spd: "080"
+            }
+        }
+        ,
+        {
+            name: "Mew",
+            id: "#152",
+            about: {
+                weight: "4,0 kg",
+                height: "0,4 m",
+                moves: "Synchronize"
+            },
+            info: "When viewed throught a microscope, this pokemons short, fine, delicate hair can be seen",
+            baseStats: {
+                hp: "100",
+                atk: "100",
+                def: "100",
+                satk: "100",
+                sdef: "100",
+                spd: "100"
             }
         }
 
         ,
         {
-            Name: "Squirtle",
-            Id: "#007",
-            About: {
-                Weight: "9,0 kg",
-                Height: "0,5 m",
-                Moves: "Torrent Rain-Dish"
+            name: "Pikachu",
+            id: "#025",
+            about: {
+                weight: "6,0 kg",
+                height: "0,4 m",
+                moves: "Mega-Punch-Pay-Day"
             },
-            INFO: "When it retracts its long neck into its shell, it squirts out water with vigorous force",
-            BaseStats: {
-                HP: "044",
-                ATK: "048",
-                DEF: "065",
-                SATK: "050",
-                SDEF: "064",
-                SPD: "043"
+            info: "Pikachu that can generate powerful electricity have a cheek sacs that are extra soft and super stretchy",
+            baseStats: {
+                hp: "035",
+                atk: "055",
+                def: "040",
+                satk: "050",
+                sdef: "050",
+                spd: "090"
+            }
+        }
+
+        ,
+        {
+            name: "Squirtle",
+            id: "#007",
+            about: {
+                weight: "9,0 kg",
+                height: "0,5 m",
+                moves: "Torrent Rain-Dish"
+            },
+            info: "When it retracts its long neck into its shell, it squirts out water with vigorous force",
+            baseStats: {
+                hp: "044",
+                atk: "048",
+                def: "065",
+                satk: "050",
+                sdef: "064",
+                spd: "043"
             }
         }
 

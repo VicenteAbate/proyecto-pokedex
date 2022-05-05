@@ -36,7 +36,7 @@ const Detalles = () => {
         <>
     
         <ul>
-            {listaPokemons && listaPokemons.map((item, index) => (<li key={index}>{item.Name}</li>))} 
+            {listaPokemons && listaPokemons.map((item, index) => (<li key={index}>{item.name}</li>))} 
         </ul>
 
         </>
