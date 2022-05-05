@@ -1,24 +1,42 @@
 import { useState } from "react";
 import Pokemons from "./pokemons";
-const Buscador = () => {
-    const [searchTerm, setSearchTerm] = useState("")
-    return <div className="App"><input type="text" placeholder='Search' onChange={event =>{setSearchTerm(event.target.value)}} />
-    {Pokemons.filter((val)=>{
-      if(searchTerm == ""){
-        return val
-      } else if (val.name.toLowerCase().includes(searchTerm.toLowerCase())){
-        return val
-      }
-    }).map((val, key)=>{
-      return (
-      <div className="user" key={key}>
-        <p>{val.name}</p>
-        </div>
-      )
-  
-    })}
-    </div>
 
-}
+
+function Buscador() {
+    // const list = [
+    //   "Banana",
+    //   "Apple",
+    //   "Orange",
+    //   "Mango",
+    //   "Pineapple",
+    //   "Watermelon",
+    // ];
+  
+    const list = Pokemons();
+
+    const [filterList, setFilterList] = useState(list);
+  
+    const handleSearch = (event) => {
+      if (event.target.value === "") {
+        setFilterList(list);
+        return;
+      }
+      const filteredValues = list.filter(
+        (item) =>
+          item.toLowerCase().indexOf(event.target.value.toLowerCase()) !== -1
+      );
+      setFilterList(filteredValues);
+    };
+  
+    return (
+      <div className="app">
+        <div>
+          Search: <input name="query" type="text" onChange={handleSearch} />
+        </div>
+        {filterList && filterList.map((item) => <div>{item}</div>)}
+      </div>
+    );
+  }
+  
 
 export default Buscador;
