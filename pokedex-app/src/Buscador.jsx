@@ -1,33 +1,28 @@
 import { useState } from "react";
 import Pokemons from "./pokemons.js";
-import pokemonsDos from "./pokemonsDOS.json"
 
 const Buscador = () => {
 
   const [searchTerm, setSearchTerm] = useState("")
 
+  const pokemons = Pokemons()
+
+  const filterPokemons = (pokemones) => pokemones.filter((pokemon)=>  pokemon.name.toLowerCase().includes(searchTerm.toLowerCase()) )
+   
+  const pokemonsFilter = filterPokemons(pokemons)
+
   return <div className="App">
     <input type="text" placeholder='Search' onChange={event =>{setSearchTerm(event.target.value)}} />
-  {pokemonsDos.filter((val)=>{
-    if(searchTerm == ""){
-      return val
-    } else if (val.name.toLowerCase().includes(searchTerm.toLowerCase())){
-      return val
-    }
-  }).map((val, key)=>{
+  {pokemonsFilter.map((pokemon, key)=>{
     return (
     <div className="user" key={key}>
-      <p>{val.name}</p>
-      
-      </div>
+      <p>{pokemon.name}{pokemon.id}{pokemon.about.weight}</p>
+        </div>
     )
 
   })}
   </div>
-
 }
-
-
 export default Buscador;
 
 
