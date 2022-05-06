@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import Pokemons from "./pokemons.js";
 
-const Detalles = () => {
+const Detalles = (props) => {
+
+    console.log(props)
 
     const [listaPokemons, setListaPokemons] = useState(null);
 
@@ -23,17 +25,11 @@ const Detalles = () => {
         getData();
     }, []);
 
-    const handleClick = () =>{
-        const response = Pokemons();
-      
-        setListaPokemons(response);
-        console.log(listaPokemons);
-    }
 
-    console.log(listaPokemons);
+    // console.log(listaPokemons);
 
     return (    
-        <div>
+        <div className="tarjeta-general">
             {listaPokemons 
             && listaPokemons.map((pokemon, index) =>  (<>  
             <div className="nombre-id-tarjeta">
