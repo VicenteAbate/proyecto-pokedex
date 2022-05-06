@@ -16,6 +16,7 @@ const Buscador = () => {
   {pokemonsFilter.map((pokemon, key)=>{
     return (
     <div className="user" key={key}>
+      <img src={pokemon.img} alt="figura pokemon" />
       <p>{pokemon.name}{pokemon.id}{pokemon.about.weight}</p>
     </div>
     )

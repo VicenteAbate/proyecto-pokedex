@@ -1,9 +1,14 @@
+import aron from "./img/aron.png"
+import bulbasur from "./img/bulbasaur.png"
+import butterfree from "./img/butterfree.png"
+import charmander from ".img/charmander.png"
 
 const Pokemons = () => {
 
 
     const pokemons = [
-        {
+        {   
+            img: aron,
            name: "Aron",
             id: "#304",
             about: {
@@ -22,7 +27,8 @@ const Pokemons = () => {
             }
         }
         ,
-        {
+        {   
+            img: bulbasur,
             name: "Bulbasaur",
             id: "#001",
             about: {
@@ -42,7 +48,8 @@ const Pokemons = () => {
             }
         }
         ,
-        {
+        {   
+            img: butterfree,
             name: "Butterfree",
             id: "#012",
             about: {
@@ -61,7 +68,8 @@ const Pokemons = () => {
             }
         }
         ,
-        {
+        {   
+            img: charmander,
             name: "Charmander",
             id: "#004",
             about: {
