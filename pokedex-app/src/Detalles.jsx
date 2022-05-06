@@ -25,15 +25,15 @@ const Detalles = () => {
     }, []);
 
     return (
-        // 
-        <>
+        
+        <div className="test" >
             {listaPokemons
                 && listaPokemons.map((pokemon, index) => (
                     <CardPokemon pokemon={pokemon} index={index}/>
 
                 ))}
             
-        </>
+        </div>
     )
 
 }
