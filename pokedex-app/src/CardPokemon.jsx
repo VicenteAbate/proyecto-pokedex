@@ -5,13 +5,15 @@ const CardPokemon = (props) => {
     const { pokemon, index } = props
 
     return (
+        
         <div className="tarjeta-general">
             <div className="nombre-id-tarjeta">
                 <h2 key={index} className="poke-name">{pokemon.name}</h2>
                 <p>{pokemon.id}</p>
             </div>
+            <div className="contenido-inferior">
             <figure>
-                <img id="Img-pokemons-buscador" src={pokemon.img} alt="figura pokemon" />
+                <img id="Img-pokemons-buscador" src={pokemon.img} alt="figura pokemon" className="imagen"/>
                 <span className="elements-span">
                     <p>{pokemon.elements.element1}</p><p>{pokemon.elements.element2}</p>
                 </span>
@@ -35,6 +37,7 @@ const CardPokemon = (props) => {
                     <li><b>SDEF</b><span>{pokemon.baseStats.sdef}</span> </li>
                     <li><b>SPN</b><span>{pokemon.baseStats.spd}</span></li>
                 </ul>
+            </div>
             </div>
         </div>
     )

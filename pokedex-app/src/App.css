@@ -51,6 +51,7 @@ ul {
   
 }
 
+
 .tarjeta-general {
   border: solid 2px;
   border-radius: 13px;
@@ -60,10 +61,13 @@ ul {
   margin-bottom: 10px;
   display: flex ;
   flex-direction: column;
+  position: relative;
 }
 
 .poke-name::before {
-content: url(./img/arrow-left.svg);
+  content: url(./img/arrow-left.svg);
+  vertical-align: middle;
+  margin-right: 5px;
 
 }
 
@@ -72,6 +76,8 @@ content: url(./img/arrow-left.svg);
   flex-direction: row;
   justify-content: space-around;
     align-items: center;
+    padding-bottom: 175px;
+
 
 }
 
@@ -83,6 +89,19 @@ content: url(./img/arrow-left.svg);
 
 .elements-span p {
   margin: 10px;
+}
+
+.contenido-inferior {
+  border: solid 1px;
+  border-radius: 13px;
+  margin: 5px;
+  padding-top: 15px;
+}
+
+.imagen {
+  position: absolute;
+  top: 140px;
+    left: 95px;
 }
 
 .App {
