@@ -16,7 +16,10 @@ const Pokemons = () => {
             img: aron,
            name: "Aron",
             id: "#304",
-            element: "Steel Rock",
+            elements:{
+                element1:"Steel",
+                element2:"Rock",
+            },
             about: {
                 weight: "60,0 kg",
                 height: "0,4 m",
@@ -37,6 +40,10 @@ const Pokemons = () => {
             img: bulbasur,
             name: "Bulbasaur",
             id: "#001",
+            elements:{
+                element1:"Grass",
+                element2:"Poison",
+            },
             about: {
                 weight: "6,9 kg",
                 height: "0,7 m",
@@ -58,6 +65,10 @@ const Pokemons = () => {
             img: butterfree,
             name: "Butterfree",
             id: "#012",
+            elements:{
+                element1:"Bug",
+                element2:"Flying",
+            },
             about: {
                 weight: "32,0 kg",
                 height: "1,1 m",
@@ -78,6 +89,9 @@ const Pokemons = () => {
             img: charmander,
             name: "Charmander",
             id: "#004",
+            elements:{
+                element1:"Fire", 
+            },
             about: {
                 weight: "8,5 kg",
                 height: "0,6 m",
@@ -97,6 +111,9 @@ const Pokemons = () => {
         {   img: ditto,
             name: "Ditto",
             id: "#132",
+            elements:{
+                element1:"Normal",
+            },
             about: {
                 weight: "4,0 kg",
                 height: "0,3 m",
@@ -118,6 +135,10 @@ const Pokemons = () => {
         {   img: gastly,
             name: "Gastly",
             id: "#092",
+            elements:{
+                element1:"Ghost",
+                element2:"Type",
+            },
             about: {
                 weight: "0,1 kg",
                 height: "1,3 m",
@@ -138,6 +159,9 @@ const Pokemons = () => {
         {   img: mew,
             name: "Mew",
             id: "#152",
+            elements:{
+                element1:"Psychic",
+            },
             about: {
                 weight: "4,0 kg",
                 height: "0,4 m",
@@ -158,6 +182,9 @@ const Pokemons = () => {
         {   img: pikachu,
             name: "Pikachu",
             id: "#025",
+            elements:{
+                element1:"Electric",
+            },
             about: {
                 weight: "6,0 kg",
                 height: "0,4 m",
@@ -178,6 +205,9 @@ const Pokemons = () => {
         {   img: squirtle,
             name: "Squirtle",
             id: "#007",
+            elements:{
+                element1:"Water",
+            },
             about: {
                 weight: "9,0 kg",
                 height: "0,5 m",
