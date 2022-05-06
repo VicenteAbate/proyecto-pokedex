@@ -17,7 +17,7 @@ const Buscador = () => {
     return (
     <div className="user" key={key}>
       <p>{pokemon.name}{pokemon.id}{pokemon.about.weight}</p>
-        </div>
+    </div>
     )
 
   })}
