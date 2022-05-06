@@ -24,6 +24,14 @@
   --Background: #F7F7F7;
   }
 
+#Pokeball{
+  width: 40px;
+}
+
+#Img-pokemons-buscador{
+  width: 160px;
+}
+
 
 .div-Buscador{
   display: flex;

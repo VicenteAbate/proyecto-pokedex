@@ -1,7 +1,12 @@
 import aron from "./img/aron.png"
 import bulbasur from "./img/bulbasaur.png"
 import butterfree from "./img/butterfree.png"
-import charmander from ".img/charmander.png"
+import charmander from "./img/charmander.png"
+import ditto from "./img/ditto.png"
+import gastly from "./img/gastly.png"
+import mew from "./img/mew.png"
+import pikachu from "./img/pikachu.png"
+import squirtle from "./img/squirtle.png"
 
 const Pokemons = () => {
 
@@ -88,7 +93,7 @@ const Pokemons = () => {
             }
         }
         ,
-        {
+        {   img: ditto,
             name: "Ditto",
             id: "#132",
             about: {
@@ -109,7 +114,7 @@ const Pokemons = () => {
         }
 
         ,
-        {
+        {   img: gastly,
             name: "Gastly",
             id: "#092",
             about: {
@@ -129,7 +134,7 @@ const Pokemons = () => {
             }
         }
         ,
-        {
+        {   img: mew,
             name: "Mew",
             id: "#152",
             about: {
@@ -149,7 +154,7 @@ const Pokemons = () => {
         }
 
         ,
-        {
+        {   img: pikachu,
             name: "Pikachu",
             id: "#025",
             about: {
@@ -169,7 +174,7 @@ const Pokemons = () => {
         }
 
         ,
-        {
+        {   img: squirtle,
             name: "Squirtle",
             id: "#007",
             about: {

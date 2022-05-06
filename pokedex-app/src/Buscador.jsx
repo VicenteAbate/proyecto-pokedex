@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Pokemons from "./pokemons.js";
+import pokeball from "./img/Pokeball.png"
 
 const Buscador = () => {
 
@@ -12,12 +13,29 @@ const Buscador = () => {
   const pokemonsFilter = filterPokemons(pokemons)
 
   return <div className="App">
+    
+    
+    <h1><img id="Pokeball" src={pokeball} alt="" />Pokedex</h1>
     <input type="text" placeholder='Search' onChange={event =>{setSearchTerm(event.target.value)}} />
   {pokemonsFilter.map((pokemon, key)=>{
     return (
     <div className="user" key={key}>
-      <img src={pokemon.img} alt="figura pokemon" />
-      <p>{pokemon.name}{pokemon.id}{pokemon.about.weight}</p>
+      {/* <img src={pokemon.img} alt="figura pokemon" /> */}
+      <p>{pokemon.name}{pokemon.id}<br/>
+      <img id="Img-pokemons-buscador" src={pokemon.img} alt="figura pokemon" /><br/>
+      <h3>About</h3>
+      <span><b>WEIGHT</b></span> {pokemon.about.weight}<br/>
+      <span><b>HEIGHT</b></span> {pokemon.about.height}<br/>
+      <span><b>MOVES</b></span> {pokemon.about.moves}<br/>
+      {pokemon.info}<br/>
+      <h3>Base Stats</h3>
+      <span><b>HP</b></span> {pokemon.baseStats.hp}<br/>
+      <span><b>ATK</b></span> {pokemon.baseStats.atk}<br/>
+      <span><b>DEF</b></span> {pokemon.baseStats.def}<br/>
+      <span><b>SATK</b></span> {pokemon.baseStats.satk}<br/>
+      <span><b>SDEF</b></span> {pokemon.baseStats.sdef}<br/>
+      <span><b>SPN</b></span> {pokemon.baseStats.spd}<br/>
+      </p>
     </div>
     )
 
