@@ -21,21 +21,9 @@ const Buscador = () => {
     return (
     <div className="user" key={key}>
       {/* <img src={pokemon.img} alt="figura pokemon" /> */}
-      <p>{pokemon.name}{pokemon.id}<br/>
+      <p>{pokemon.id}<br/></p>
       <img id="Img-pokemons-buscador" src={pokemon.img} alt="figura pokemon" /><br/>
-      <h3>About</h3>
-      <span><b>WEIGHT</b></span> {pokemon.about.weight}<br/>
-      <span><b>HEIGHT</b></span> {pokemon.about.height}<br/>
-      <span><b>MOVES</b></span> {pokemon.about.moves}<br/>
-      {pokemon.info}<br/>
-      <h3>Base Stats</h3>
-      <span><b>HP</b></span> {pokemon.baseStats.hp}<br/>
-      <span><b>ATK</b></span> {pokemon.baseStats.atk}<br/>
-      <span><b>DEF</b></span> {pokemon.baseStats.def}<br/>
-      <span><b>SATK</b></span> {pokemon.baseStats.satk}<br/>
-      <span><b>SDEF</b></span> {pokemon.baseStats.sdef}<br/>
-      <span><b>SPN</b></span> {pokemon.baseStats.spd}<br/>
-      </p>
+      <p>{pokemon.name}</p>
     </div>
     )
 
@@ -46,65 +34,21 @@ export default Buscador;
 
 
 
+/*  <h3>About</h3>
+      <span><b>WEIGHT</b>{pokemon.about.weight}</span> <br/>
+      <span><b>HEIGHT</b>{pokemon.about.height}</span> <br/>
+      <span><b>MOVES</b>{pokemon.about.moves}</span> <br/>
+      {pokemon.info}<br/>
+      <h3>Base Stats</h3>
+      <span><b>HP</b>{pokemon.baseStats.hp}</span> <br/>
+      <span><b>ATK</b>{pokemon.baseStats.atk}</span> <br/>
+      <span><b>DEF</b>{pokemon.baseStats.def}</span> <br/>
+      <span><b>SATK</b>{pokemon.baseStats.satk}</span> <br/>
+      <span><b>SDEF</b>{pokemon.baseStats.sdef}</span> <br/>
+      <span><b>SPN</b>{pokemon.baseStats.spd}</span> <br/>
+       */
 
 
 
 
 
-
-
-
-// function Buscador() {
-//     // const list = [
-//     //   "Banana",
-//     //   "Apple",
-//     //   "Orange",
-//     //   "Mango",
-//     //   "Pineapple",
-//     //   "Watermelon",
-//     // ];
-  
-//     const list = Pokemons();
-//     // console.log(list[1].name)
-
-//   for (let index = 0; index < list.length; index++) {
-//     const element = list[index];
-//     console.log(element.name)
-
-//     return (
-//       <h1>{element}</h1>
-//       )
-    
-//   }
-
-//     return (
-//       <h1>{list[1].name}</h1>
-   
-
-//     )
-  
-
-//     // const [filterList, setFilterList] = useState(list);
-  
-//     // const handleSearch = (event) => {
-//     //   if (event.target.value === "") {
-//     //     setFilterList(list);
-//     //     return;
-//     //   }
-//     //   const filteredValues = list.filter(
-//     //     (item) =>
-//     //       item.toLowerCase().indexOf(event.target.value.toLowerCase()) !== -1
-//     //   );
-//     //   setFilterList(filteredValues);
-//     // };
-  
-//     // return (
-//     //   <div className="app">
-//     //     <div>
-//     //       Search: <input name="query" type="text" onChange={handleSearch} />
-//     //     </div>
-//     //     {filterList && filterList.map((item) => <div>{item}</div>)}
-//     //   </div>
-//     // );
-//   }
-  

@@ -16,6 +16,7 @@ const Pokemons = () => {
             img: aron,
            name: "Aron",
             id: "#304",
+            element: "Steel Rock",
             about: {
                 weight: "60,0 kg",
                 height: "0,4 m",
