@@ -1,28 +1,50 @@
-:root {
-  --Rock: #B69E31;
-  --Ghost: #70559B;
-  --Steel: #B7B9D0;
-  --Water: #6493EB;
-  --Grass: #74CB48;
-  --Psychic: #FB5584;
-  --Ice: #9AD6DF;
-  --Dark: #75574C;
-  --Fairy: #E69EAC;
-  --Normal: #AAA67F;
-  --Fighting: #C12239;
-  --Flying: #A891EC;
-  --Poison: #A43E93;
-  --Ground: #DEC16B;
-  --Bug: #A7B723;
-  --Fire: #F57D31;
-  --Electric: #F9CF30;
-  --Dragon: #7037FF;
-  --DarkGray: #212121;
-  --MediumGray: #666666;
-  --LightGray: #EOEOEO;
-  --White: #FFFFFF;
-  --Background: #F7F7F7;
-  }
+/* Aca tenemos los colores para cada pokemon*/
+
+.rock {color: #B69E31;} 
+
+.ghost {color: #70559B;}
+
+.steel {color:#B7B9D0;}
+
+.water  {color:#6493EB;}
+
+.grass {color:#74CB48;}
+
+.psychic {color:#FB5584;}
+
+.ice  {color:#9AD6DF;}
+
+.dark {color:#75574C;}
+
+.fairy {color:#E69EAC;}
+
+.normal {color:#AAA67F;}
+
+.fighting{color:#C12239;}
+
+.flying{color:#A891EC;}
+
+.poison {color:#A43E93;}
+
+.ground {color:#DEC16B;}
+
+.bug {color:#A7B723;}
+
+.fire {color:#F57D31;}
+
+.electric {color:#F9CF30;}
+
+.dragon {color:#7037FF;}
+
+.darkGray {color:#212121;}
+
+.mediumGray {color:#666666;}
+
+.lightGray {color:#E0E0E0;}
+
+.white {color:#FFFFFF;}
+
+.background {color:#F7F7F7;}
 
 #Pokeball{
   width: 40px;
