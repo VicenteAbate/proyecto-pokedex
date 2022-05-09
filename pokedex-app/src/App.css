@@ -118,8 +118,8 @@ ul {
   padding-left: 10px;
 }
 
-.nombre-id-tarjeta img {
-  
+.pokebola {
+    display: none;
      opacity: 0.5;
 }
 

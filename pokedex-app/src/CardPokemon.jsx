@@ -42,7 +42,7 @@ const CardPokemon = (props) => {
             <div className= {`${"nombre-id-tarjeta"} ${pokemon.elements.element1}` }>
                 <h2 key={index} className="poke-name">{pokemon.name}</h2>
                 <p>{pokemon.id}</p>
-                <img src=".img/Pokeball.png" alt="" />
+                <img src=".img/Pokeball.png" alt="" className="pokebola"/>
 
             </div>
             <div className={className}>
