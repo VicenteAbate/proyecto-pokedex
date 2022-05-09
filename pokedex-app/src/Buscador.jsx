@@ -20,7 +20,8 @@ const Buscador = () => {
     </div>
     <div className="input-buscador">
       <input className="input-buscador-pokemons" type="text" placeholder='Search' onChange={event => { setSearchTerm(event.target.value) }} />
-    </div>
+    </div> 
+    <div className="small-card">
     {pokemonsFilter.map((pokemon, key) => {
       return (
         
@@ -39,6 +40,7 @@ const Buscador = () => {
       )
 
     })}
+    </div>
   </div>
 }
 export default Buscador;
