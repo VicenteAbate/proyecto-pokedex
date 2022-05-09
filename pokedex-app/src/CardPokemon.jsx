@@ -38,10 +38,10 @@ const CardPokemon = (props) => {
 
     return (
 
-        <div className="tarjeta-general" /*className={showHideClassName} dentro de op2*/>  {/* probé con <StyledCard> pero no funcionó op1 */}
+        <div className={`${"tarjeta-general"} ${pokemon.elements.element1}` }>
             <div className= {`${"nombre-id-tarjeta"} ${pokemon.elements.element1}` }>
                 <h2 key={index} className="poke-name">{pokemon.name}</h2>
-                <p>{pokemon.id}</p>
+                <p className="card-pokemon-id">{pokemon.id}</p>
                 <img src=".img/Pokeball.png" alt="" className="pokebola"/>
 
             </div>
@@ -49,12 +49,12 @@ const CardPokemon = (props) => {
                 <figure>
                     <img id="Img-pokemons-buscador" src={pokemon.img} alt="figura pokemon" className="imagen" />
                     <span className="elements-span">
-                        <p>{pokemon.elements.element1}</p>
+                        <p className={`${"elementos-parrafo"} ${pokemon.elements.element1}` }>{pokemon.elements.element1}</p>
                         {pokemon.elements.element2 != null && <p>{pokemon.elements.element2}</p> } 
                     </span>
                 </figure>
                 <div>
-                    <h3 >About</h3>
+                    <h3 className={`${"h3-about"} ${pokemon.elements.element1}` } >About</h3>
                     <ul className="list-about">
                         <li className="itmes-about"><span className="weight-icon">{pokemon.about.weight}</span><span className="subtitles-about">Weight</span> </li>
                         <li className="itmes-about height"><span className="height-icon">{pokemon.about.height}</span><span className="subtitles-about">Height</span> </li>
@@ -65,7 +65,7 @@ const CardPokemon = (props) => {
                 <div>
                     <h3>Base Stats</h3>
                     <div className="lists-base-stats">
-                        <ul className="table-elements">
+                        <ul className={`${"table-elements" } ${pokemon.elements.element1}` }>
                             <li><span >HP</span> </li>
                             <li><span >ATK</span></li>
                             <li><span >DEF</span></li>

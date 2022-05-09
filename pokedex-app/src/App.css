@@ -1,52 +1,73 @@
 /* Aca tenemos los colores para cada pokemon*/
 
-.rock {color: #B69E31;} 
+.Rock { color: #B69E31;
+background-color: #B69E31;} 
 
-.ghost {color: #70559B;}
+.Ghost { color:#70559B ;
+  background-color: #70559B}
 
-.Steel {background-color:#B7B9D0;
-        color:red}
+.Steel { color:#B7B9D0 ;
+  background-color:#B7B9D0}
 
-.water  {color:#6493EB;}
+.Water  { color: #6493EB;
+  background-color:#6493EB}
 
+.Grass { color:#74CB48 ;
+  background-color:#74CB48;}
 
-.grass {color:#74CB48;}
+.Psychic { color:#FB5584 ;
+  background-color:#FB5584}
 
-.psychic {color:#FB5584;}
+.Ice  { color: #9AD6DF;
+  background-color:#9AD6DF}
 
-.ice  {color:#9AD6DF;}
+.Dark { color: #75574C;
+  background-color:#75574C}
 
-.dark {color:#75574C;}
+.Fairy {color: #E69EAC;
+  background-color:#E69EAC}
 
-.fairy {color:#E69EAC;}
+.Normal { color: #AAA67F;
+  background-color:#AAA67F}
 
-.normal {color:#AAA67F;}
+.Fighting{ color: #C12239;
+  background-color:#C12239}
 
-.fighting{color:#C12239;}
+.Flying{ color: #A891EC;
+  background-color:#A891EC}
 
-.flying{color:#A891EC;}
+.Poison { color: #A43E93;
+  background-color:#A43E93}
 
-.poison {color:#A43E93;}
+.Ground { color: #DEC16B;
+  background-color:#DEC16B}
 
-.ground {color:#DEC16B;}
+.Bug { color: #A7B723;
+background-color: #A7B723;}
 
-.bug {color:#A7B723;}
+.Fire { color: #F57D31;
+  background-color:#F57D31}
 
-.fire {color:#F57D31;}
+.Electric { color: #F9CF30;
+  background-color:#F9CF30}
 
-.electric {color:#F9CF30;}
+.Dragon { color: #7037FF;
+  background-color:#7037FF}
 
-.dragon {color:#7037FF;}
+.DarkGray {
+  background-color:#212121}
 
-.darkGray {color:#212121;}
+.MediumGray {
+  background-color:#666666}
 
-.mediumGray {color:#666666;}
+.LightGray {
+  background-color:#E0E0E0}
 
-.lightGray {color:#E0E0E0;}
+.White {
+  background-color:#FFFFFF}
 
-.white {color:#FFFFFF;}
-
-.background {color:#F7F7F7;}
+.Background {
+  background-color:#F7F7F7}
 
 #Pokeball{
   width: 40px;
@@ -73,6 +94,25 @@ ul {
   flex-direction: row;
     flex-wrap: wrap;
   
+}
+
+/* ACA METI MANO EN EL CODIGO DE CARDPOKEMONS CON LAS CLASES, LAS TRAJE PARA DETALLAR UN POCO MAS
+PQ PINTABA TODO DEL COLOR DEL POKEMON */ 
+
+.card-pokemon-id {
+  color: white;
+}
+
+.poke-name{
+  color: white;
+}
+
+.h3-about{
+  background-color: white;
+}
+
+.elementos-parrafo{
+  color: white;
 }
 
 
@@ -105,6 +145,7 @@ ul {
     background-repeat: no-repeat;
     background-position: right;
    position: relative;
+   border-radius: 10px;
 }
 
 .nombre-id-tarjeta  p {
@@ -146,6 +187,7 @@ ul {
   margin: 5px;
   padding-top: 15px;
   min-height: 530px;
+  background-color: white;
 }
 
 .imagen {
@@ -205,6 +247,7 @@ ul {
   border-right: solid 1px;
   text-align: center;
   padding-right: 20px;
+  background-color: white;
 }
 
 .table-numbers {

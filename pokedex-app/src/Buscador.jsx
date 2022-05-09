@@ -27,13 +27,13 @@ const Buscador = () => {
         
         <div className="separacion-pokemons" key={key}>
           <div className="id-buscador">
-            <p className="color-id-buscador">{pokemon.id}<br /></p>
+            <p className={`${"color-id-buscador"} ${pokemon.elements.element1}` }>{pokemon.id}<br /></p>
           </div>
           <div className="pokemons-buscador">
             <img className="Img-pokemons-buscador" src={pokemon.img} alt="figura pokemon" /><br />
           </div>
-          <div className="nombre-buscador">
-            <h3 className="color-nombre--buscador">{pokemon.name}</h3>
+          <div className={`${"nombre-buscador"} ${pokemon.elements.element1}` }>
+            <h3 className={`${'color-nombre--buscador'} ${pokemon.elements.element1}` }>{pokemon.name}</h3>
           </div>
         </div>
   
