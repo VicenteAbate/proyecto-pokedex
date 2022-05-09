@@ -138,12 +138,8 @@ PQ PINTABA TODO DEL COLOR DEL POKEMON */
 .nombre-id-tarjeta {
   display: flex;
   flex-direction: row;
-  
-    align-items: center;
-    padding-bottom: 175px;
-    background-image: url(./img/Pokeball.png);
-    background-repeat: no-repeat;
-    background-position: right;
+  align-items: center;
+  padding-bottom: 175px;
    position: relative;
    border-radius: 10px;
 }
@@ -159,10 +155,13 @@ PQ PINTABA TODO DEL COLOR DEL POKEMON */
   padding-left: 10px;
 }
 
-.pokebola {
-    display: none;
-     opacity: 0.5;
+.nombre-id-tarjeta  img {
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
+
 
 .elements-span {
   display: flex;

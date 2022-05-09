@@ -1,48 +1,19 @@
 import { useEffect, useState } from "react";
 import './App.css';
+import pokebola from "./img/Pokeball.png"
 
 const CardPokemon = (props) => {
 
     const { pokemon, index, className } = props
 
-    // INTENTOS DE SETEAR EL COLOR SEGÚN ELEMENT
-    //opcion 2 tomando modelo
-
-    // const colores = ({ :( , show, children }) => {
-    //     const showHideClassName = show ? "App display-block" : "App display-none";
-    // }
-
-    // INTENTOS DE SETEAR EL COLOR SEGÚN ELEMENT
-    //opción 1 con npm install --save styled-components 
-    // const [estadoColor, setEstadoColor] = useState(null);
-
-    // if (pokemon.elements.element1 === 'Electric'){
-
-    //     const StyledCard = styled(div) `
-    //     padding: 0.5em;
-    //     margin: 0.5em;
-    //     color: ${props => props.inputColor || "palevioletred"};
-    //     background: papayawhip;
-    //     border: none;
-    //     border-radius: 3px;
-    //   `;
-
-    //   setEstadoColor(StyledCard);
-    // }
-
-    /* if element1 === electric : background-color: #F9CF30; 
-    if element1 === fire : background-color: #F57D31;
-    if element1 === Bug : background-color: #A7B723;      
-    */
-
-
+   
     return (
 
         <div className={`${"tarjeta-general"} ${pokemon.elements.element1}` }>
             <div className= {`${"nombre-id-tarjeta"} ${pokemon.elements.element1}` }>
                 <h2 key={index} className="poke-name">{pokemon.name}</h2>
                 <p className="card-pokemon-id">{pokemon.id}</p>
-                <img src=".img/Pokeball.png" alt="" className="pokebola"/>
+                <img src={pokebola} alt="figura pokebola" className="pokebola"/>
 
             </div>
             <div className={className}>
