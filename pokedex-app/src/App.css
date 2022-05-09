@@ -182,7 +182,7 @@ PQ PINTABA TODO DEL COLOR DEL POKEMON */
 }
 
 .contenido-inferior {
-  border: solid 1px;
+  border: solid 3px;
   border-radius: 13px;
   margin: 5px;
   padding-top: 15px;
@@ -209,6 +209,7 @@ PQ PINTABA TODO DEL COLOR DEL POKEMON */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: black;
 }
 .subtitles-about {
   font-weight: lighter;
@@ -240,6 +241,7 @@ PQ PINTABA TODO DEL COLOR DEL POKEMON */
   font-size: 14px;
     padding: 10px;
     text-align: left;
+    color: black;
 }
 
 .table-elements {
@@ -252,6 +254,7 @@ PQ PINTABA TODO DEL COLOR DEL POKEMON */
 
 .table-numbers {
   padding-left: 20px;
+  color: black;
 }
 
 .lists-base-stats {

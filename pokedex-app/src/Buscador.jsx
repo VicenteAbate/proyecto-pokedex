@@ -25,7 +25,7 @@ const Buscador = () => {
     {pokemonsFilter.map((pokemon, key) => {
       return (
         
-        <div className="separacion-pokemons" key={key}>
+        <div className={`${"separacion-pokemons"} ${pokemon.elements.element1}` } key={key}>
           <div className="id-buscador">
             <p className={`${"color-id-buscador"} ${pokemon.elements.element1}` }>{pokemon.id}<br /></p>
           </div>
