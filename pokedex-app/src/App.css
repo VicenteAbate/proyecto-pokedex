@@ -74,17 +74,42 @@ ul {
 .nombre-id-tarjeta {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  
     align-items: center;
     padding-bottom: 175px;
+    background-image: url(./img/Pokeball.png);
+    background-repeat: no-repeat;
+    background-position: right;
+   position: relative;
+}
 
+.nombre-id-tarjeta  p {
+  position: absolute;
+    right: 15px;
+    font-size: 12px;
+    top: 0;
+}
 
+.nombre-id-tarjeta  h2 {
+  padding-left: 10px;
+}
+
+.nombre-id-tarjeta img {
+  
+     opacity: 0.5;
 }
 
 .elements-span {
   display: flex;
   align-items: space-between;
   justify-content: center;
+}
+
+.elements-span p {
+  border: solid 1px;
+  border-radius: 50px;
+  padding: 5px 13px;
+  font-weight: bold;
 }
 
 .elements-span p {
@@ -96,12 +121,77 @@ ul {
   border-radius: 13px;
   margin: 5px;
   padding-top: 15px;
+  min-height: 530px;
 }
 
 .imagen {
   position: absolute;
   top: 140px;
     left: 95px;
+}
+
+.itmes-about {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  text-align: left;
+  max-width: 100px;
+  justify-content: center;
+  
+}
+.list-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.subtitles-about {
+  font-weight: lighter;
+  padding-top: 5px;
+  word-wrap: normal;
+
+}
+
+.weight-icon::before {
+  content: url(img/Weight.svg);
+  padding-right: 5px;
+  vertical-align: middle;
+ 
+}
+
+.height-icon::before {
+  content: url(img/Height.svg);
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.itmes-about.height {
+  border-right: solid 1px;
+  border-left: solid 1px;
+  padding: 0 20px;
+}
+
+.pokemon-info {
+  font-size: 14px;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-elements {
+  font-weight: bold;
+  border-right: solid 1px;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.table-numbers {
+  padding-left: 20px;
+}
+
+.lists-base-stats {
+  display: flex;
+  align-items: center;
+
+  text-align: center;
 }
 
 .App {

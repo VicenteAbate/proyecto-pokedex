@@ -39,12 +39,3 @@ const Detalles = () => {
 }
 export default Detalles;
 
-/*     {listaPokemons 
-                && listaPokemons.map((pokemon, index) =>  (<ul key={index}>
-            <li >  {pokemon.name}</li>
-            <li ><h3>About</h3></li>
-            <li ><span><b>WEIGHT</b>{pokemon.about.weight}</span> </li>
-            <li></li>
-            <li></li>
-            <li></li>
-                <ul> */
