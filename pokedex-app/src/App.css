@@ -4,9 +4,11 @@
 
 .ghost {color: #70559B;}
 
-.steel {color:#B7B9D0;}
+.Steel {background-color:#B7B9D0;
+        color:red}
 
 .water  {color:#6493EB;}
+
 
 .grass {color:#74CB48;}
 

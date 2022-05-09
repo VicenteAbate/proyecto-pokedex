@@ -3,7 +3,7 @@ import './App.css';
 
 const CardPokemon = (props) => {
 
-    const { pokemon, index } = props
+    const { pokemon, index, className } = props
 
     // INTENTOS DE SETEAR EL COLOR SEGÚN ELEMENT
     //opcion 2 tomando modelo
@@ -39,18 +39,18 @@ const CardPokemon = (props) => {
     return (
 
         <div className="tarjeta-general" /*className={showHideClassName} dentro de op2*/>  {/* probé con <StyledCard> pero no funcionó op1 */}
-            <div className="nombre-id-tarjeta">
+            <div className= {`${"nombre-id-tarjeta"} ${pokemon.elements.element1}` }>
                 <h2 key={index} className="poke-name">{pokemon.name}</h2>
                 <p>{pokemon.id}</p>
                 <img src=".img/Pokeball.png" alt="" />
 
             </div>
-            <div className="contenido-inferior">
+            <div className={className}>
                 <figure>
                     <img id="Img-pokemons-buscador" src={pokemon.img} alt="figura pokemon" className="imagen" />
                     <span className="elements-span">
                         <p>{pokemon.elements.element1}</p>
-                        <p>{pokemon.elements.element2}</p>
+                        {pokemon.elements.element2 != null && <p>{pokemon.elements.element2}</p> } 
                     </span>
                 </figure>
                 <div>

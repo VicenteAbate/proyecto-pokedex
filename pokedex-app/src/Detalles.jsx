@@ -24,12 +24,14 @@ const Detalles = () => {
         getData();
     }, []);
 
+    /* escribir una función que retorne el elemento  */
+
     return (
         
         <div className="test" >
             {listaPokemons
                 && listaPokemons.map((pokemon, index) => (
-                    <CardPokemon pokemon={pokemon} index={index}/>
+                    <CardPokemon pokemon={pokemon} index={index} className="contenido-inferior" />
 
                 ))}
             
