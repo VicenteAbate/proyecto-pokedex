@@ -4,12 +4,10 @@
 
 .separacion-pokemons{
     border: 2px solid;
-    width: 450px;
-    height: 353px;
     border-radius: 8px;
     margin-top: 15px;
     background-color: white;
-    
+    min-width: 184px;
 }
 
 .small-card {
@@ -17,6 +15,11 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: solid 1px;
+    max-width: 600px;
+    padding: 26px;
+    border-radius: 20px;
+    margin: auto;
 }
 
 
@@ -63,7 +66,7 @@ margin-bottom: 15px;
 }
 
 .Img-pokemons-buscador{
-    width: 180px;
+    width: 100px;
 ;
 
 }
